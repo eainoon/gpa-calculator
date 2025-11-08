@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💜 Cute Pastel GPA Calculator 💜</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="calculator">
+    <h1>GPA Calculator</h1>
+    <div id="courses-container">
+      <div class="course">
+        <input type="text" placeholder="Course Name" class="course-name">
+        <input type="number" placeholder="Credits" class="course-credits" min="0">
+        <select class="course-grade">
+          <option value="4">A</option>
+          <option value="3.7">A−</option>
+          <option value="3.3">B+</option>
+          <option value="3">B</option>
+          <option value="2.7">B−</option>
+          <option value="2.3">C+</option>
+          <option value="2">C</option>
+          <option value="1.7">C−</option>
+          <option value="1">D</option>
+          <option value="0">F</option>
+        </select>
+        <button class="remove-course">✖</button>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="add-course">+ Add Course</button>
+      <button id="calculate">Calculate GPA</button>
+      <button id="reset">Reset</button>
+    </div>
+    <div id="result">GPA: 0.00</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

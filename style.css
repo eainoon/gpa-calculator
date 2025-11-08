@@ -1,0 +1,128 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fcd5ce, #e0bbe4);
+  margin: 0;
+  padding-top: 40px;
+}
+
+.calculator {
+  background: #d8b4fe;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 15px 30px rgba(128,0,128,0.3);
+  width: 550px;
+  max-height: 80vh;
+  overflow-y: auto;
+  scroll-behavior: smooth; /* smooth scrolling when overflowing */
+}
+
+.calculator h1 {
+  text-align: center;
+  color: #5a189a;
+  margin-bottom: 25px;
+}
+
+#courses-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Each course row in a pastel box */
+.course {
+  display: flex;
+  gap: 12px;
+  background: #e9d5ff;
+  padding: 12px;
+  border-radius: 15px;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(128,0,128,0.2);
+  transition: all 0.3s ease;
+}
+
+.course input, .course select {
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  flex: 1;
+  font-size: 1rem;
+  background: #f3e8ff;
+  color: #5a189a;
+}
+
+.course input:focus, .course select:focus {
+  outline: 2px solid #9b5de5;
+}
+
+.remove-course {
+  background: #ffb6c1;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 0 12px;
+  transition: 0.3s;
+}
+
+.remove-course:hover {
+  background: #ff69b4;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background: #e9d5ff;
+  color: #5a189a;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  background: #d8b4fe;
+}
+
+#result {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-top: 12px;
+  color: #5a189a;
+  background: #f3e8ff;
+  padding: 12px;
+  border-radius: 15px;
+  box-shadow: inset 0 3px 6px rgba(128,0,128,0.2);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .calculator {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .course input, .course select {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  
+  .buttons button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
